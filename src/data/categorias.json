@@ -1,0 +1,18 @@
+[
+  {
+    "id": "clasicas",
+    "nombre": "Clásicas"
+  },
+  {
+    "id": "especiales",
+    "nombre": "Especiales"
+  },
+  {
+    "id": "vegetarianas",
+    "nombre": "Vegetarianas"
+  },
+  {
+    "id": "carnes",
+    "nombre": "Carnes"
+  }
+]

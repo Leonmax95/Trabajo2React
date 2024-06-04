@@ -1,0 +1,171 @@
+ [
+    {   "id": 1,
+        "nombre": "Margherita",
+        "ingredientes": ["Tomate", "Mozzarella", "Albahaca"],
+        "imagen": "Pizzample.png",
+        "tamanos": {
+            "pequena": 6.99,
+            "mediana": 8.99,
+            "grande": 10.99
+        },
+        "categoria" : {
+            "id" : "clasicas",
+            "nombre" :"Margherita"
+        }
+    },
+    {    "id": 2,
+        "nombre": "Pepperoni",
+        "ingredientes": ["Tomate", "Mozzarella", "Pepperoni"],
+        "imagen": "Pizzample.png",
+        "tamanos": {
+            "pequena": 7.99,
+            "mediana": 9.99,
+            "grande": 11.99
+        },
+        "categoria" : {
+            "id" : "clasicas",
+            "nombre" :"Pepperoni"
+        }
+    },
+    {   "id": 3,
+        "nombre": "Napolitana",
+        "ingredientes": ["Tomate", "Mozzarella", "Anchoas", "Alcaparras"],
+        "imagen": "Pizzample.png",
+        "tamanos": {
+            "pequena": 7.49,
+            "mediana": 9.49,
+            "grande": 11.49
+        },
+        "categoria" : {
+            "id" : "clasicas",
+            "nombre" :"Napolitana"
+        }
+    },
+    {   "id": 4,
+        "nombre": "Cuatro Quesos",
+        "ingredientes": ["Mozzarella", "Cheddar", "Parmesano", "Gorgonzola"],
+        "imagen": "Pizzample.png",
+        "tamanos": {
+            "pequena": 8.99,
+            "mediana": 10.99,
+            "grande": 12.99
+            
+        },
+        "categoria" : {
+            "id" : "especiales",
+            "nombre" :"Cuatro Quesos"
+        }
+    },
+    {   "id": 5,
+        "nombre": "Hawaiana",
+        "ingredientes": ["Tomate", "Mozzarella", "Jamón", "Piña"],
+        "imagen": "Pizzample.png",
+        "tamanos": {
+            "pequena": 7.99,
+            "mediana": 9.99,
+            "grande": 11.99
+        },
+        "categoria" : {
+            "id" : "especiales",
+            "nombre" :"Hawaiana"
+        }
+    }, 
+    {   "id": 6,
+        "nombre": "Mexicana",
+        "ingredientes": ["Tomate", "Mozzarella", "Chorizo", "Jalapeños", "Maíz"],
+        "imagen": "Pizzample.png",
+        "tamanos": {
+            "pequena": 8.49,
+            "mediana": 10.49,
+            "grande": 12.49
+        },
+        "categoria" : {
+            "id" : "especiales",
+            "nombre" :"Mexicana"
+        }
+    },
+    {   "id": 7,
+        "nombre": "Vegetarianas",
+        "ingredientes": ["Tomate", "Mozzarella", "Pimientos", "Cebolla", "Aceitunas", "Champiñones"],
+        "imagen": "Pizzample.png",
+        "tamanos": {
+            "pequena": 7.99,
+            "mediana": 9.99,
+            "grande": 11.99
+        },
+        "categoria" : {
+            "id" : "vegetarianas",
+            "nombre" :"Vegetariana"
+        }
+    },
+    {   "id": 8,
+        "nombre": "Veggie Deluxe",
+        "ingredientes": ["Tomate", "Mozzarella", "Espinacas", "Tomates Secos", "Cebolla"],
+        "imagen": "Pizzample.png",
+        "tamanos": {
+            "pequena": 8.49,
+            "mediana": 10.49,
+            "grande": 12.49
+        },
+        "categoria" : {
+            "id" : "vegetarianas",
+            "nombre" :"Veggie Deluxe"
+        }
+    },
+    {   "id": 9,
+        "nombre": "Caprese",
+        "ingredientes": ["Tomate", "Mozzarella", "Albahaca", "Aceitunas Negras"],
+        "imagen": "Pizzample.png",
+        "tamanos": {
+            "pequena": 7.49,
+            "mediana": 9.49,
+            "grande": 11.49
+        },
+        "categoria" : {
+            "id" : "vegetarianas",
+            "nombre" :"Caprese"
+        }
+    },
+    {   "id": 10,
+        "nombre": "Barbacoa",
+        "ingredientes": ["Salsa Barbacoa", "Mozzarella", "Pollo", "Cebolla", "Maíz"],
+        "imagen": "Pizzample.png",
+        "tamanos": {
+            "pequena": 8.99,
+            "mediana": 10.99,
+            "grande": 12.99
+        },
+        "categoria" : {
+            "id" : "carnes",
+            "nombre" :"Barbacoa"
+        }
+    },
+    {   "id": 11,
+        "nombre": "Carnívora",
+        "ingredientes": ["Tomate", "Mozzarella", "Carne de Res", "Tocino", "Jamón"],
+        "imagen": "Pizzample.png",
+        "tamanos": {
+            "pequena": 9.49,
+            "mediana": 11.49,
+            "grande": 13.49
+        },
+        "categoria" : {
+            "id" : "carnes",
+            "nombre" :"Carnívora"
+        }
+    },
+    {   "id": 12,
+        "nombre": "Pollo BBQ",
+        "ingredientes": ["Salsa Barbacoa", "Mozzarella", "Pollo", "Pimientos", "Cebolla"],
+        "imagen": "Pizzample.png",
+        "tamanos": {
+            "pequena": 8.49,
+            "mediana": 10.49,
+            "grande": 12.49
+        },
+        "categoria" : {
+            "id" : "carnes",
+            "nombre" :"Pollo BBQ"
+        }
+    }
+]
