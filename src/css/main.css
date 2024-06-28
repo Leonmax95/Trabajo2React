@@ -68,7 +68,7 @@
 
 .productos-grilla {
     display: flex;
-    
+
     flex-wrap: wrap;
     gap: 2%;
 }
@@ -83,7 +83,7 @@
     align-items: center;
     margin-top: 2%;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.37);
-      
+
 }
 
 .producto2 {
@@ -99,7 +99,7 @@
     margin-right: auto;
     text-align: center;
     box-shadow: 8px 5px 10px rgba(245, 227, 227, 0.37);
-      
+
 }
 
 
@@ -123,6 +123,64 @@
 .logo-app {
     width: 11%;
     margin-left: -1%;
-    margin-top: -5.8rem;
+    margin-top: -4.8rem;
     position: absolute;
+}
+
+.item-count-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.item-count {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.item-count .btn1, 
+.item-count .btn2, 
+.item-count .agregar-al-carrito {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.item-count .btn1:hover, 
+.item-count .btn2:hover, 
+.item-count .agregar-al-carrito:hover {
+    background-color: #0056b3;
+}
+
+.item-count .btn1:active, 
+.item-count .btn2:active, 
+.item-count .agregar-al-carrito:active {
+    background-color: #003f7f;
+}
+
+.item-count .btn1, 
+.item-count .btn2 {
+    padding: 5px 15px; 
+}
+
+.item-count .parrafo {
+    margin: 0 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.agregar-al-carrito {
+    width: 150px; 
+    text-align: center;
+    cursor: pointer;
+    margin-top: 10px;
+    background-image: linear-gradient(to top, #0ba360 0%, #3cba92 100%);
 }

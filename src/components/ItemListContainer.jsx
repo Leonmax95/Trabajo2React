@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react';
-import data from "../data/productos.json";
-import categories from "../data/categorias.json";
 import { ItemList } from './ItemList';
 import { useParams } from 'react-router-dom';
+import { collection, getDocs, query, where } from "firebase/firestore";
+import { db } from "../firebase/config";
 
 export const ItemListContainer = ({ greating }) => {
 
@@ -11,27 +11,20 @@ export const ItemListContainer = ({ greating }) => {
 
     let [titulo, setTitulo] = useState("Productos");
 
-    const pedirProductos = () => {
-        return new Promise((resolve) => {
-            setTimeout(() => {
-                resolve(data);
-            }, 1000);
-        })
-    }
-
     useEffect(() => {
 
-        pedirProductos()
-            .then((res) => {
-                if (!categoryId) {
-                    setTitulo("Productos");
-                    setProductos(res);
-                } else {
-                    setTitulo(categories.find((cat) => cat.id === categoryId).nombre);
-                    setProductos(res.filter((prod) => prod.categoria.id === categoryId));
-                }
-            })
+        const productosRef = collection(db, "productos");
+        const q = query(productosRef, where("categorias.id", "==", categoryId));
 
+        getDocs(q)
+        .then((res) => {
+            setProductos(
+                res.docs.map((doc) => {
+                    return {...doc.data(), id: doc.id}
+                })
+            )
+        })
+    
     }, [categoryId]);
 
 

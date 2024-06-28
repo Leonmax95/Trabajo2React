@@ -6,15 +6,19 @@ import { ItemListContainer } from "./components/ItemListContainer"
 import Footer from "./components/Footer";
 import ItemDetailContainer from "./components/ItemDetailContainer";
 import "./css/main.css"
+import { CartContext } from "./context/CartContext";
+import Carrito from "./components/header/Carrito";
 
 function App() {
 
-  const [numerito, setNumerito] = useState(1);
+  const [carrito, setCarrito] = useState([]);
   const greating = "I Love Pizza";
 
+
   return (
+    <CartContext.Provider value={{carrito, setCarrito}}>
     <BrowserRouter>
-      <Header numerito={numerito} setNumerito={setNumerito} />
+      <Header carrito={carrito} setCarrito={setCarrito} />
       <Routes>
         <Route path="/" element={<ItemListContainer greating={greating}/>}/>
         <Route path="/category/:categoryId" element={<ItemListContainer greating={greating}/>}/>
@@ -23,6 +27,7 @@ function App() {
       </Routes>
       <Footer />
     </BrowserRouter>
+    </CartContext.Provider>
   )
 }
 
