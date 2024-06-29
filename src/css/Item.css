@@ -1,0 +1,44 @@
+.producto {
+  background-color: rgb(150, 3, 27);
+  border-radius: .5rem;
+  padding: 1rem;
+  width: 330px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 2%;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.37);
+}
+
+.producto img {
+  width: 100%;
+  height: auto;
+  max-height: 200px; /* Ajusta esta altura según necesidad */
+  object-fit: cover;
+  border-radius: 0.5rem;
+}
+
+.link-item {
+  text-decoration: none;
+  color: #ccc;
+  font-size: 1.1rem;
+  font-weight: 700;
+  padding: .5rem 0;
+  transition: all .5s;
+}
+
+.link-item:hover {
+  color: #aaa;
+}
+
+.boton-agregar {
+  padding: .3rem .5rem;
+  border-radius: 5px;
+  font-weight: 500;
+}
+
+.boton-agregar:hover {
+  cursor: pointer;
+  background-color: #aaa;
+}

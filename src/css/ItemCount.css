@@ -1,0 +1,63 @@
+.item-count-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.item-count {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.item-count .btn1,
+.item-count .btn2,
+.item-count .agregar-al-carrito {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.item-count .btn1:hover,
+.item-count .btn2:hover,
+.item-count .agregar-al-carrito:hover {
+  background-color: #0056b3;
+}
+
+.item-count .btn1:active,
+.item-count .btn2:active,
+.item-count .agregar-al-carrito:active {
+  background-color: #003f7f;
+}
+
+.item-count .btn1,
+.item-count .btn2 {
+  padding: 5px 15px;
+}
+
+.item-count .parrafo {
+  margin: 0 10px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.agregar-al-carrito {
+  text-align: center;
+  padding: 0.5rem 0.9rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  margin-top: 10px;
+  background-color: #0ba360;
+}
+
+.agregar-al-carrito:hover {
+  cursor: pointer;
+  background-color: #08844e;
+}

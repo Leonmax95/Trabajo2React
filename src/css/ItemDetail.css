@@ -1,0 +1,27 @@
+.producto2 {
+  background-color: rgb(150, 3, 27);
+  border-radius: 0.5rem;
+  padding: 1rem;
+  width: 330px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  box-shadow: 8px 5px 10px rgba(245, 227, 227, 0.37);
+}
+
+.volver {
+  text-decoration: none;
+  color: #ccc;
+  font-size: 1.1rem;
+  font-weight: 700;
+  padding: .5rem 0;
+  transition: all .5s;
+}
+
+.volver:hover {
+  color: #aaa;
+}

@@ -1,186 +1,91 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 :root {
-    color-scheme: light dark;
-    background: linear-gradient(90deg, rgb(5, 31, 1), rgb(131, 131, 131), rgb(5, 31, 1));
+  color-scheme: light dark;
+  background: linear-gradient(
+    90deg,
+    rgb(5, 31, 1),
+    rgb(131, 131, 131),
+    rgb(5, 31, 1)
+  );
 }
 
 .item-list-container {
-    min-height: 38.2em;
+  min-height: 38.2em;
 }
 
 .header {
-    background: linear-gradient(90deg, rgba(9, 107, 9, 0.67), white, red);
-    display: flex;
-    justify-content: space-between;
-    padding: 1rem;
-    align-items: center;
-    height: 163px;
-    border: 2px solid white;
+  background: linear-gradient(90deg, rgba(9, 107, 9, 0.67), white, red);
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  align-items: center;
+  height: 163px;
+  border: 2px solid white;
 }
 
 .container {
-    max-width: 1000px;
-    margin: auto;
-    padding: 2rem;
-    display: flex;
-    gap: 1rem;
+  max-width: 1000px;
+  margin: auto;
+  padding: 2rem;
+  display: flex;
+  gap: 1rem;
 }
 
 .nav {
-    display: flex;
+  display: flex;
 }
 
 .nav-menu {
-    list-style-type: none;
-    display: flex;
-    gap: .5rem;
+  list-style-type: none;
+  display: flex;
+  gap: 0.5rem;
 }
 
 .nav-link {
-    color: red;
-    text-decoration: none;
+  color: red;
+  text-decoration: none;
 }
 
 .nav-link.active {
-    font-weight: bold;
-    text-decoration: underline;
+  font-weight: bold;
+  text-decoration: underline;
 }
 
 .products-container {
-    min-height: 30vh;
-    display: grid;
-    place-items: center;
+  min-height: 30vh;
+  display: grid;
+  place-items: center;
 }
 
 .oscuro {
-    background-color: black !important;
+  background-color: black !important;
 }
 
 .item-list-container {
-    max-width: 1100px;
-    margin: 0 auto;
-}
-
-.productos-grilla {
-    display: flex;
-
-    flex-wrap: wrap;
-    gap: 2%;
-}
-
-.producto {
-    background-color: rgb(150, 3, 27);
-    border-radius: .5rem;
-    padding: 1rem;
-    width: 330px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 2%;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.37);
-
-}
-
-.producto2 {
-    background-color: rgb(150, 3, 27);
-    border-radius: .5rem;
-    padding: 1rem;
-    width: 330px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 2%;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    box-shadow: 8px 5px 10px rgba(245, 227, 227, 0.37);
-
-}
-
-
-
-.grid {
-    display: grid;
+  max-width: 1100px;
+  margin: 0 auto;
 }
 
 .carrito {
-    display: flex
+  display: flex;
 }
 
 .imgC {
-    font-size: 40px;
+  font-size: 40px;
 }
 
 .numeritoL {
-    font-size: 25px;
+  font-size: 25px;
 }
 
 .logo-app {
-    width: 11%;
-    margin-left: -1%;
-    margin-top: -4.8rem;
-    position: absolute;
-}
-
-.item-count-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-    margin-top: 20px;
-}
-
-.item-count {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-}
-
-.item-count .btn1, 
-.item-count .btn2, 
-.item-count .agregar-al-carrito {
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    border-radius: 4px;
-    transition: background-color 0.3s ease;
-}
-
-.item-count .btn1:hover, 
-.item-count .btn2:hover, 
-.item-count .agregar-al-carrito:hover {
-    background-color: #0056b3;
-}
-
-.item-count .btn1:active, 
-.item-count .btn2:active, 
-.item-count .agregar-al-carrito:active {
-    background-color: #003f7f;
-}
-
-.item-count .btn1, 
-.item-count .btn2 {
-    padding: 5px 15px; 
-}
-
-.item-count .parrafo {
-    margin: 0 10px;
-    font-size: 16px;
-    font-weight: bold;
-}
-
-.agregar-al-carrito {
-    width: 150px; 
-    text-align: center;
-    cursor: pointer;
-    margin-top: 10px;
-    background-image: linear-gradient(to top, #0ba360 0%, #3cba92 100%);
+  width: 11%;
+  margin-left: -1%;
+  margin-top: -4.8rem;
+  position: absolute;
 }

@@ -1,122 +1,112 @@
- [
-    {   "id": 1,
-        "nombre": "Margherita",
-        "ingredientes": ["Tomate", "Mozzarella", "Albahaca"],
-        "imagen": "margherita.jpg",
-        
-        "categoria" : {
-            "id" : "clasicas",
-            "nombre" :"Margherita"
+[
+    {
+        "id": 1,
+        "nombre": "Camiseta Deportiva",
+        "precio": 19.99,
+        "imagen": "https://placeholder.pics/svg/150",
+        "descripcion": "Camiseta ligera y transpirable, perfecta para hacer ejercicio.",
+        "categoria": {
+            "id": "ropa",
+            "nombre": "Ropa"
         }
     },
-    {    "id": 2,
-        "nombre": "Pepperoni",
-        "ingredientes": ["Tomate", "Mozzarella", "Pepperoni"],
-        "imagen": "pepperoni.jpg",
-        
-        "categoria" : {
-            "id" : "clasicas",
-            "nombre" :"Pepperoni"
+    {
+        "id": 2,
+        "nombre": "Zapatillas de Running",
+        "precio": 49.99,
+        "imagen": "https://placeholder.pics/svg/150",
+        "descripcion": "Zapatillas con amortiguación avanzada para largas distancias.",
+        "categoria": {
+            "id": "ropa",
+            "nombre": "Ropa"
         }
     },
-    {   "id": 3,
-        "nombre": "Napolitana",
-        "ingredientes": ["Tomate", "Mozzarella", "Anchoas", "Alcaparras"],
-        "imagen": "napolitana.jpg",
-        
-        "categoria" : {
-            "id" : "clasicas",
-            "nombre" :"Napolitana"
+    {
+        "id": 3,
+        "nombre": "Mochila Escolar",
+        "precio": 24.99,
+        "imagen": "https://placeholder.pics/svg/150",
+        "descripcion": "Mochila resistente y espaciosa, ideal para el día a día escolar.",
+        "categoria": {
+            "id": "accesorios",
+            "nombre": "Accesorios"
         }
     },
-    {   "id": 4,
-        "nombre": "Cuatro Quesos",
-        "ingredientes": ["Mozzarella", "Cheddar", "Parmesano", "Gorgonzola"],
-        "imagen": "cuatro quesos.jpg",
-        
-        "categoria" : {
-            "id" : "especiales",
-            "nombre" :"Cuatro Quesos"
+    {
+        "id": 4,
+        "nombre": "Auriculares Bluetooth",
+        "precio": 29.99,
+        "imagen": "https://placeholder.pics/svg/150",
+        "descripcion": "Auriculares inalámbricos con sonido de alta calidad y batería de larga duración.",
+        "categoria": {
+            "id": "tecnologia",
+            "nombre": "Tecnología"
         }
     },
-    {   "id": 5,
-        "nombre": "Hawaiana",
-        "ingredientes": ["Tomate", "Mozzarella", "Jamón", "Piña"],
-        "imagen": "hawaiana.jpg",
-        
-        "categoria" : {
-            "id" : "especiales",
-            "nombre" :"Hawaiana"
-        }
-    }, 
-    {   "id": 6,
-        "nombre": "Mexicana",
-        "ingredientes": ["Tomate", "Mozzarella", "Chorizo", "Jalapeños", "Maíz"],
-        "imagen": "mexicana.jpg",
-        
-        "categoria" : {
-            "id" : "especiales",
-            "nombre" :"Mexicana"
+    {
+        "id": 5,
+        "nombre": "Reloj Inteligente",
+        "precio": 79.99,
+        "imagen": "https://placeholder.pics/svg/150",
+        "descripcion": "Reloj con monitoreo de salud y notificaciones inteligentes.",
+        "categoria": {
+            "id": "tecnologia",
+            "nombre": "Tecnología"
         }
     },
-    {   "id": 7,
-        "nombre": "Vegetariana",
-        "ingredientes": ["Tomate", "Mozzarella", "Pimientos", "Cebolla", "Aceitunas", "Champiñones"],
-        "imagen": "vegetariana.jpg",
-        
-        "categoria" : {
-            "id" : "vegetarianas",
-            "nombre" :"Vegetariana"
+    {
+        "id": 6,
+        "nombre": "Gafas de Sol",
+        "precio": 15.99,
+        "imagen": "https://placeholder.pics/svg/150",
+        "descripcion": "Gafas con protección UV y diseño moderno.",
+        "categoria": {
+            "id": "ropa",
+            "nombre": "Ropa"
         }
     },
-    {   "id": 8,
-        "nombre": "Veggie Deluxe",
-        "ingredientes": ["Tomate", "Mozzarella", "Espinacas", "Tomates Secos", "Cebolla"],
-        "imagen": "veggie.jpg",
-        
-        "categoria" : {
-            "id" : "vegetarianas",
-            "nombre" :"Veggie Deluxe"
+    {
+        "id": 7,
+        "nombre": "Bolígrafo de Lujo",
+        "precio": 9.99,
+        "imagen": "https://placeholder.pics/svg/150",
+        "descripcion": "Bolígrafo elegante y duradero, perfecto para regalos.",
+        "categoria": {
+            "id": "accesorios",
+            "nombre": "Accesorios"
         }
     },
-    {   "id": 9,
-        "nombre": "Capresse",
-        "ingredientes": ["Tomate", "Mozzarella", "Albahaca", "Aceitunas Negras"],
-        "imagen": "capresse.jpg",
-        
-        "categoria" : {
-            "id" : "vegetarianas",
-            "nombre" :"Capresse"
+    {
+        "id": 8,
+        "nombre": "Cargador Inalámbrico",
+        "precio": 19.99,
+        "imagen": "https://placeholder.pics/svg/150",
+        "descripcion": "Cargador rápido y eficiente compatible con la mayoría de los dispositivos.",
+        "categoria": {
+            "id": "tecnologia",
+            "nombre": "Tecnología"
         }
     },
-    {   "id": 10,
-        "nombre": "Barbacoa",
-        "ingredientes": ["Salsa Barbacoa", "Mozzarella", "Pollo", "Cebolla", "Maíz"],
-        "imagen": "barbacoa.jpg",
-        
-        "categoria" : {
-            "id" : "carnes",
-            "nombre" :"Barbacoa"
+    {
+        "id": 9,
+        "nombre": "Termo de Acero Inoxidable",
+        "precio": 14.99,
+        "imagen": "https://placeholder.pics/svg/150",
+        "descripcion": "Termo de alta calidad que mantiene las bebidas calientes o frías por horas.",
+        "categoria": {
+            "id": "accesorios",
+            "nombre": "Accesorios"
         }
     },
-    {   "id": 11,
-        "nombre": "Carnívora",
-        "ingredientes": ["Tomate", "Mozzarella", "Carne de Res", "Tocino", "Jamón"],
-        "imagen": "carnivora.jpg",
-        
-        "categoria" : {
-            "id" : "carnes",
-            "nombre" :"Carnívora"
-        }
-    },
-    {   "id": 12,
-        "nombre": "Pollo BBQ",
-        "ingredientes": ["Salsa Barbacoa", "Mozzarella", "Pollo", "Pimientos", "Cebolla"],
-        "imagen": "pollo BBQ.jpg",
-       
-        "categoria" : {
-            "id" : "carnes",
-            "nombre" :"Pollo BBQ"
+    {
+        "id": 10,
+        "nombre": "Libreta de Notas",
+        "precio": 7.99,
+        "imagen": "https://placeholder.pics/svg/150",
+        "descripcion": "Libreta con cubierta dura y papel de alta calidad.",
+        "categoria": {
+            "id": "accesorios",
+            "nombre": "Accesorios"
         }
     }
 ]

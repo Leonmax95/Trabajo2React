@@ -1,13 +1,13 @@
-
-
+import React, { useEffect, useState } from 'react';
 import { NavLink } from 'react-router-dom';
+import { collection, getDocs } from "firebase/firestore";
+import { db } from "../../firebase/config";
 import styled from 'styled-components';
-import categories from '../../data/categorias.json';
 import pizzaImage from '../../../public/images/logo_i_love_pizza.png';
 
 const NavbarContainer = styled.nav`
-background-image: url(${pizzaImage});
-background-size: cover;
+    background-image: url(${pizzaImage});
+    background-size: cover;
     background-position: center;
     padding-top: 3.7em;
     display: flex;
@@ -16,9 +16,13 @@ background-size: cover;
     align-items: center;
 `;
 
-const NavMenu = styled.div`
+const NavMenu = styled.ul`
     display: flex;
+    align-items: center;
     gap: 1rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
 `;
 
 const NavItem = styled(NavLink)`
@@ -43,19 +47,33 @@ const HomeLink = styled(NavItem)`
     color: white;
 `;
 
-const Navbar = () => {
+export const NavBar = () => {
+    const [categories, setCategories] = useState([]);
+
+    useEffect(() => {
+        const categoriasRef = collection(db, "categorias");
+        getDocs(categoriasRef)
+            .then((res) => {
+                setCategories(res.docs.map((doc) => {
+                    return { id: doc.id, ...doc.data() }
+                }));
+            });
+    }, []);
+
     return (
         <NavbarContainer>
             <NavMenu>
-                <HomeLink to="/">Inicio</HomeLink>
-                {categories.map((categoria) => (
-                    <NavItem key={categoria.id} to={`/category/${categoria.id}`}>
-                        {categoria.nombre}
-                    </NavItem>
+                <li>
+                    <HomeLink to="/">Inicio</HomeLink>
+                </li>
+                {categories.map((category) => (
+                    <li key={category.id}>
+                        <NavItem to={`/category/${category.id}`}>
+                            {category.nombre}
+                        </NavItem>
+                    </li>
                 ))}
             </NavMenu>
         </NavbarContainer>
     );
 };
-
-export default Navbar;

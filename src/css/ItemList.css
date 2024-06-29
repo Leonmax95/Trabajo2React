@@ -1,0 +1,30 @@
+.productos-grilla {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  justify-content: center;
+}
+
+@media (max-width: 900px) {
+  .productos-grilla {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .productos-grilla {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+}
+
+.cargando-producto {
+  text-align: center;
+  font-size: 1.5rem;
+  color: #555;
+}

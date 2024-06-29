@@ -1,18 +1,14 @@
 [
-  {
-    "id": "clasicas",
-    "nombre": "Clásicas"
-  },
-  {
-    "id": "especiales",
-    "nombre": "Especiales"
-  },
-  {
-    "id": "vegetarianas",
-    "nombre": "Vegetarianas"
-  },
-  {
-    "id": "carnes",
-    "nombre": "Carnes"
-  }
+    {
+        "id": "ropa",
+        "nombre": "Ropa"
+    },
+    {
+        "id": "accesorios",
+        "nombre": "Accesorios"
+    },
+    {
+        "id": "tecnologia",
+        "nombre": "Tecnología"
+    }
 ]
