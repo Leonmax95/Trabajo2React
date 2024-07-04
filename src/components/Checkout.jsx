@@ -40,7 +40,7 @@ export const Checkout = () => {
 
   return (
     <div className="checkout-container">
-        <h1 className="checkout-title">Ingrese sus datos para finalizar la compra</h1>
+        <h1 className="checkout-title">Ingrese sus datos para recibir su factura</h1>
         <form className="checkout-form" onSubmit={handleSubmit(comprar)}>
             <input type="text" placeholder="Ingrese su nombre" {...register("nombre")} />
             <input type="email" placeholder="Ingrese su e-mail" {...register("email")} />

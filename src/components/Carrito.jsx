@@ -23,7 +23,7 @@ const Carrito = () => {
       
       Swal.fire({
         title: "Seguro que quieres finalizar la compra?",
-        text: "You won't be able to revert this!",
+        text: "¡No podrás revertir esto!",
         icon: "warning",
         showCancelButton: true,
         confirmButtonColor: "#3085d6",
