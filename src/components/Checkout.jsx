@@ -19,7 +19,7 @@ export const Checkout = () => {
             total: calcularTotal(),
             fecha: Timestamp.now()
         }
-        
+
         const pedidosRef = collection(db, "pedidos");
 
         addDoc(pedidosRef, pedido)
@@ -38,14 +38,14 @@ export const Checkout = () => {
         )
     }
 
-  return (
-    <div className="checkout-container">
-        <h1 className="checkout-title">Ingrese sus datos para recibir su factura</h1>
-        <form className="checkout-form" onSubmit={handleSubmit(comprar)}>
-            <input type="text" placeholder="Ingrese su nombre" {...register("nombre")} />
-            <input type="email" placeholder="Ingrese su e-mail" {...register("email")} />
-            <button type="submit">Comprar</button>
-        </form>
-    </div>
-  )
+    return (
+        <div className="checkout-container">
+            <h1 className="checkout-title" style={{ color: 'black' }}>Ingrese sus datos para recibir su factura</h1>
+            <form className="checkout-form" onSubmit={handleSubmit(comprar)}>
+                <input type="text" placeholder="Ingrese su nombre" {...register("nombre")} />
+                <input type="email" placeholder="Ingrese su e-mail" {...register("email")} />
+                <button type="submit">Comprar</button>
+            </form>
+        </div>
+    )
 }
